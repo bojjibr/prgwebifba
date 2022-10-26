@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FSA Sites</title>
+  </head>
+  <body>
+    <div>
+      <h1>FSA Sites</h1>
+      <a href="#" onclick="minhaRequisicao('empresa.html')">A empresa</a>
+      <a href="#" onclick="minhaRequisicao('servicos.html')">Serviços</a>
+      <a href="#" onclick="minhaRequisicao('contato.html')">Contato</a>
+    </div>
+
+    <div id="conteudo">
+      <h2>Seja bem-vindo</h2>
+      <p>
+        Nós fazemos sites para seu negócio. <br />
+        tel: (75) 2001-4500 email: <br />
+        fsasites@fsasites.com
+      </p>
+    </div>
+
+    <div>
+      <h5>Todos os direitos reservados.</h5>
+    </div>
+
+    <script>
+      function minhaRequisicao(url) {
+        let ajax = new XMLHttpRequest();
+        ajax.open("GET", url);
+        ajax.onreadystatechange = () => {
+          document.getElementById("conteudo").innerHTML = ajax.responseText;
+        };
+        ajax.send();
+      }
+    </script>
+  </body>
+</html>
