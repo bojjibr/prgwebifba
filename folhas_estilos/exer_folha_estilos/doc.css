@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Ubuntu Mono", monospace;
+  width: 100%;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.container {
+  text-align: center;
+  padding: 5px;
+}
+
+.container p {
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
