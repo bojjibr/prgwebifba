@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo Layout Exercício</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 1200px;
+      }
+
+      .header,
+      .footer {
+        background-color: grey;
+        color: white;
+        padding: 15px;
+      }
+
+      .footer p {
+        text-align: center;
+      }
+
+      .column {
+        float: left;
+        padding: 15px;
+        width: 75%;
+        height: 400px;
+        border: 1px solid red;
+      }
+
+      .column h1 {
+        text-align: center;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .menu {
+        width: 25%;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Imagem</h1>
+    </div>
+
+    <div class="clearfix">
+      <div class="column menu">
+        <a href="#" target="_blank">Home</a> </br>
+        <a href="#" target="_blank">Serviços</a> </br>
+        <a href="#" target="_blank">Contato</a> </br>
+      </div>
+
+      <div class="column">
+        <h1>Box Direito</h1>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Crie seu site - Todos os direitos reservados</p>
+    </div>
+  </body>
+</html>
