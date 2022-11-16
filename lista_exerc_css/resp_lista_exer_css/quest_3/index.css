@@ -1,0 +1,54 @@
+html,
+body,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 600px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+}
+
+#title {
+  background-color: #0d5188;
+}
+
+#title h2,
+h3 {
+  text-align: center;
+  color: white;
+}
+
+table {
+  width: 100%;
+  background-color: #c7e7f3;
+}
+
+table td {
+  text-align: center;
+}
+
+table th {
+  background-color: #66c5e3;
+}
+
+table .ncity {
+  color: #0d5188;
+  text-align: left;
+  font-weight: bold;
+}
+
+table .position {
+  background-color: silver;
+}
+
+table #position {
+  width: 10%;
+}
+
+table #pop {
+  width: 15%;
+}
