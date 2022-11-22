@@ -1,0 +1,76 @@
+@import "nav_dropdown.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header {
+  grid-area: header;
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.main {
+  grid-area: main;
+  border: 1px solid red;
+  max-width: 710px;
+}
+
+.main #block {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  margin: 10px;
+  float: left;
+}
+
+.main h2 {
+  margin-bottom: 10px;
+}
+
+.backend {
+  grid-area: backend;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.frontend {
+  grid-area: frontend;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.aside {
+  grid-area: aside;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "main main main main aside aside"
+    "main main main main aside aside"
+    "main main main main aside aside"
+    "backend backend frontend frontend aside aside"
+    "backend backend frontend frontend aside aside"
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  max-width: 1200px;
+  justify-content: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu DropDown</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">header content</header>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Frontend</a>
+            <ul class="dropdown">
+              <li><a href="#">Landind Page</a></li>
+              <li><a href="#">Vuejs</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Backend</a>
+            <ul>
+              <li><a href="#">Go</a></li>
+              <li><a href="#">Rust</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Scripts</a></li>
+          <li><a href="#">Downloads</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">E-commerce</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <main class="main">
+        <h2>Destaques</h2>
+        <div id="block"></div>
+
+        <div class="content1">
+          <h3>Vai ter algum coisa</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            lacinia, enim eu ultricies posuere, elit est ornare lectus, id
+            placerat neque felis a nisi. Curabitur egestas ipsum at sem
+            tincidunt consectetur. Mauris lacinia urna ex, pretium pellentesque
+            odio ullamcorper id. Nam rhoncus arcu lobortis orci facilisis
+            blandit.
+          </p>
+          <span><a href="#">[+] Leia mais</a></span>
+        </div>
+      </main>
+
+      <article class="backend">Backend</article>
+
+      <article class="frontend">Frontend</article>
+
+      <aside class="aside">Mais lidos</aside>
+
+      <footer class="footer">
+        <p>Exercício de CSS</p>
+        <p>Aluno: Paulo Giovani</p>
+      </footer>
+    </div>
+  </body>
+</html>
