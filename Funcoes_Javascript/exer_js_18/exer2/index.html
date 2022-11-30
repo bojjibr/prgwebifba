@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Fatorial Js</title>
+  </head>
+  <body>
+    <h1>Fatorial com Js</h1>
+    Digite um número: <input id="number" /> <br /><br />
+    <button onclick="vFatorial()">Calcular factorial</button>
+    <p id="res"></p>
+    <script>
+      function fatorial(num) {
+        if (num == 0) {
+          return 1;
+        } else {
+          return num * fatorial(num - 1);
+        }
+      }
+      function vFatorial() {
+        let num = document.getElementById("number").value;
+        let result = fatorial(num);
+        document.getElementById("res").innerHTML =
+          "O fatorial do número " + num + " é " + result;
+      }
+    </script>
+  </body>
+</html>
